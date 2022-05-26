@@ -15,6 +15,9 @@
     <!-- ISTANZA VUE.JS -->
     <div id="container">
 
+        <!-- AGGIUNTA ELEMENTI TODO LIST -->
+        <input type="text" v-model="newTask.description" placeholder="Add a new Task...">
+        <button @click="addTask">Add</button>
         <!-- TODO LIST -->
         <ul>
             <!-- ELEMENTI DELLA TODO LIST -->

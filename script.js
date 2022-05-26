@@ -2,6 +2,11 @@ const toDo = new Vue ({
     el : '#container',
 
     data : {
+        newTask : {
+            description :  '',
+            check : false
+        },
+
         list : [
             {
                 description : 'fare la spesa',
@@ -32,7 +37,17 @@ const toDo = new Vue ({
 
     methods : {
         deleteTask (index) {
-            this.list.splice(index, 1)
+            this.list.splice(index, 1);
+        },
+
+        addTask () {
+            if (this.newTask.description !== '') {
+                this.list.push(this.newTask);
+            };
+            this.newTask = {
+                description :  '',
+                check : false
+            };
         }
     }
 });
