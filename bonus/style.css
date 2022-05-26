@@ -1,0 +1,11 @@
+/* STILE GENERALE PAGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STILE CLASSI VUE.JS */
+.done {
+    text-decoration: line-through;
+}
