@@ -22,7 +22,7 @@
         <ul>
             <!-- ELEMENTI DELLA TODO LIST -->
             <li v-for="(task, i) in list"  :key="i">
-                <p @click="changeCheck(task.check)" :class="task.check === true ? 'done' : 'undone'">{{task.description}}</p>
+                <p @click="changeCheck(task)" :class="task.check === true ? 'done' : 'undone'">{{task.description}}</p>
                 <i class="far fa-window-close" @click="deleteTask(i)"></i>
             </li>
         </ul>

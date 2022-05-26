@@ -50,13 +50,12 @@ const toDo = new Vue ({
             };
         },
 
-        changeCheck (change) {
-            if (change === false) {
-                change = true ;
-            } else {
-                change = false;
-            };
-            console.log(change);
+        changeCheck (element) {
+                if (element.check === true) {
+                    element.check = false ;
+                } else {
+                    element.check = true;
+                };
         }
     }
 });
