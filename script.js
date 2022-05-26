@@ -1,5 +1,6 @@
 const toDo = new Vue ({
     el : '#container',
+
     data : {
         list : [
             {
@@ -27,5 +28,11 @@ const toDo = new Vue ({
                 check : false
             }
         ]
+    },
+
+    methods : {
+        deleteTask (index) {
+            this.list.splice(index, 1)
+        }
     }
 });
