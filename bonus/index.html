@@ -15,9 +15,12 @@
     <!-- ISTANZA VUE.JS -->
     <div id="container">
 
-        <!-- AGGIUNTA ELEMENTI TODO LIST -->
-        <input type="text" @keyup.enter="addTask" v-model="newTask.description" placeholder="Add a new Task...">
-        <button @click="addTask">Add</button>
+        <h1>TO DO LIST</h1>
+
+        <div class="list">
+                    <!-- AGGIUNTA ELEMENTI TODO LIST -->
+        <input class="input-text" type="text" @keyup.enter="addTask" v-model="newTask.description" placeholder="Add a new Task...">
+        <button class="add-btn" @click="addTask">Add</button>
         <!-- TODO LIST -->
         <ul>
             <!-- ELEMENTI DELLA TODO LIST -->
@@ -26,6 +29,8 @@
                 <i class="far fa-window-close" @click="deleteTask(i)"></i>
             </li>
         </ul>
+        </div>
+
 
     </div>
     
